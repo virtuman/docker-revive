@@ -2,7 +2,7 @@
 
 FROM alpine:3.3
 
-MAINTAINER Iv
+MAINTAINER Alexei Smirnov
 
 WORKDIR /var/www/html
 
@@ -22,7 +22,7 @@ RUN apk add -U gzip \
                php-zlib \
                tar
 
-RUN wget -O- https://download.revive-adserver.com/revive-adserver-4.0.0.tar.gz | tar xz --strip 1
+RUN wget -O- https://download.revive-adserver.com/revive-adserver-4.0.1.tar.gz | tar xz --strip 1
 
 RUN chown -R nobody:nobody . \
     && rm -rf /var/cache/apk/*
