@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t revive:4.0.0 .
+docker build -t revive:4.0.1 .
