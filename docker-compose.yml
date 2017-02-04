@@ -1,7 +1,7 @@
 revive:
-  image: revive:4.0.0
+  image: virtuman/revive
   ports:
-    - "8080:80"
+    - "88:80"
   links:
     - mysql
   volumes:
